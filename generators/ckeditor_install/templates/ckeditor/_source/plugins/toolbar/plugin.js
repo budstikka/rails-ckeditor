@@ -159,7 +159,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 						var labelId = CKEDITOR.tools.getNextId();
 
-						var output = [ '<div class="cke_toolbox" role="toolbar" aria-labelledby="', labelId, '"' ],
+						var output = [ '<div class="cke_toolbox" role="toolbar" aria-labelledby="', labelId, '" onmousedown="return false;"' ],
 							expanded =  editor.config.toolbarStartupExpanded !== false,
 							groupStarted;
 
@@ -417,7 +417,7 @@ CKEDITOR.config.toolbar_Basic =
  *     ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
  *     ['BidiLtr', 'BidiRtl' ],
  *     ['Link','Unlink','Anchor'],
- *     ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+ *     ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe'],
  *     '/',
  *     ['Styles','Format','Font','FontSize'],
  *     ['TextColor','BGColor'],
@@ -436,7 +436,7 @@ CKEDITOR.config.toolbar_Full =
 	['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
 	['BidiLtr', 'BidiRtl' ],
 	['Link','Unlink','Anchor'],
-	['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+	['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe'],
 	'/',
 	['Styles','Format','Font','FontSize'],
 	['TextColor','BGColor'],
