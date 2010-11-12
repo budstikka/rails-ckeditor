@@ -50,6 +50,9 @@ module Ckeditor
   mattr_accessor :file_manager_image_uri
   @@file_manager_image_uri = "/ckeditor/images"
   
+  mattr_accessor :custom_config_uri
+  @@custom_config_uri = "/javascripts/ckeditor/config.js"
+  
   # Get the image class from the image reference object.
   def self.image_model
     if self.class_variables.include?(:@@image_model_ref)

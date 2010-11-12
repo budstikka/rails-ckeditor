@@ -1,6 +1,9 @@
 # Use this hook to configure ckeditor
 if Object.const_defined?("Ckeditor")
   Ckeditor.setup do |config|
+    # Path to customConfig config file.
+    #config.custom_config_uri = "/javascripts/ckeditor/config.js"
+    
     # The file_post_name allows you to set the value name used to post the file. 
     # This is not related to the file name. The default value is 'data'. 
     # For maximum compatibility it is recommended that the default value is used.

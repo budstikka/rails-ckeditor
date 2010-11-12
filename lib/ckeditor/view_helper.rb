@@ -46,6 +46,7 @@ module Ckeditor
       
       ckeditor_options[:filebrowserImageBrowseUrl] = Ckeditor.file_manager_image_uri
       ckeditor_options[:filebrowserImageUploadUrl] = Ckeditor.file_manager_image_upload_uri
+      ckeditor_options[:customConfig] = Ckeditor.custom_config_uri
       
       output_buffer = ActiveSupport::SafeBuffer.new
         
